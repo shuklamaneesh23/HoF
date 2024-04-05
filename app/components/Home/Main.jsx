@@ -1,6 +1,7 @@
 import React from 'react';
 import ConnectWalletButton from './ConnectWallet';
 import KnowMoreButton from './KnowMoreButton';
+import StepsCard from './StepsCard';
 
 
 function Main() {
@@ -91,37 +92,17 @@ function Main() {
 
 
       </div>
-      <div className='bg-black h-full w-full relative z-10 top-full rounded-[70px]'>
-        <div className='flex flex-col justify-center items-center text-white'>
-          <div className='flex  text-xl rounded-full border justify-center items-center h-[50px] w-[50px] border-white mt-20'> <span className='text-2xl text-blue-400'>1</span> </div>
-          <div> 
-          <h1 className='text-[4vw]'>Easy Login</h1>
-          </div>
-          <div>
-          <h1 className='text-[2vw]'>"Seamless login: quick, secure access."</h1>
-          </div>
-          <div className='flex flex-row  border rounded-3xl w-4/5 p-10 mt-10 bg-gradient-to-br from-black to-blue-900'>
-            <div className='flex flex-col w-1/2 gap-6 items-center justify-center'>
-                <div>
-                <h1 className='text-[3vw] font-semibold'>Easily connect with wallet</h1>
-                </div>
-                <div className='flex flex-wrap'> 
-                <h1 className='text-[1vw] text-wrap font-medium'>"Streamline wallet connection: Effortlessly link your wallet to access funds securely and conveniently, enabling seamless transactions with just a few clicks for hassle-free financial management and transactions on our platform."</h1>
-                </div>
-                <div>
-                  <KnowMoreButton props='Learn More about Metamask'/>
-                </div>
-            </div>
-            <div className='w-1/2 flex justify-center items-center'>
-              <img src='/Metamask.png' className='h-[50vh] w-auto' />
-            </div>
-          </div>
-        </div>
-
+      <div className='bg-black h-300vh w-full relative z-10 top-full rounded-t-[70px] p-12 flex flex-col'>
+        <StepsCard number='1' title='Easy Login' description='"Seamless login: quick, secure access."' image='/Metamask.png' heading="Easily connect with wallet" desc="Streamline wallet connection: Effortlessly link your wallet to access funds securely and conveniently, enabling seamless transactions with just a few clicks for hassle-free financial management and transactions on our platform." button="Learn More about Metamask" css="flex-row" bcolor="white" />
+        <StepsCard number='2' title='Instant Kyc' description='"Instant KYC: Fast, secure verification for seamless onboarding."' image='https://appinventiv.com/wp-content/uploads/2021/03/KYC-with-blockchain-02.jpg' heading="Verify yourself through Adhar" desc="Easily verify your identity through Aadhar for seamless onboarding. Our platform offers instant Aadhar-based KYC verification, ensuring quick and secure authentication. Experience hassle-free verification and gain access to our services swiftly." button="Do your kyc Now!" css="flex-row-reverse" bcolor="white" />
 
 
 
       </div>
+      <div className='bg-white h-300vh w-full relative z-13 top-full rounded-t-[70px] p-12 flex flex-col text-blue-400'>
+        <StepsCard number='3' title='Instant Loans' description='"Instant Loans: Quick, easy access to funds."' image='https://www.moneycontrol.com/static-mcnews/2021/06/Loan-770x433.jpg' heading="Get Instant Loans" desc="Access instant loans quickly and easily on our platform. Our streamlined process ensures hassle-free loan disbursal, enabling you to secure funds instantly for your financial needs. Experience quick and convenient borrowing with FlexiLoans." button="Learn More about Loans" css="flex-row" bcolor="black" />
+        <StepsCard number='4' title='Flexible Repayment' description='"Flexible Repayment: Tailored repayment options."' image='https://www.moneycontrol.com/static-mcnews/2021/06/Loan-770x433.jpg' heading="Repay your loans flexibly" desc="Enjoy flexible repayment options tailored to your needs. Our platform offers customizable repayment plans, enabling you to repay your loans conveniently. Experience hassle-free repayment and manage your finances effectively with FlexiLoans." button="Learn More about Repayment" css="flex-row-reverse" bcolor="black" />
+       </div> 
     </div>
   );
 }
