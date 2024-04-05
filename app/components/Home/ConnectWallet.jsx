@@ -15,6 +15,7 @@ const ConnectWalletButton = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const address = await signer.getAddress();
+        
         const balance = await provider.getBalance(address); // Get account balance
         const formattedBalance = ethers.utils.formatEther(balance); // Convert balance from Wei to Ether
         const shortenedAddress = address.slice(0, 5) + "..." + address.slice(-5); // Shorten address for display

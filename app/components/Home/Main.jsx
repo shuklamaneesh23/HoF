@@ -1,51 +1,13 @@
 import React from 'react';
-import ConnectWalletButton from './ConnectWallet';
-import KnowMoreButton from './KnowMoreButton';
 import StepsCard from './StepsCard';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 
 function Main() {
   return (
     <div className='h-screen w-screen'>
-      <div className="navbar w-[96%] bg-base-300 fixed z-20 text-black rounded-2xl m-[2%]">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Borrow</a></li>
-              <li>
-                <a>Learn</a>
-                <ul className="p-2">
-                  <li><a>How to use?</a></li>
-                  <li><a>Features</a></li>
-                </ul>
-              </li>
-              <li><a>Lend</a></li>
-            </ul>
-          </div>
-          <a className="btn btn-ghost text-2xl">FlexiLoans</a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li><a>Borrow</a></li>
-            <li>
-              <details>
-                <summary>Learn</summary>
-                <ul className="p-2">
-                  <li><a>How to use?</a></li>
-                  <li><a>More features</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Lend</a></li>
-          </ul>
-        </div>
-        <div className="navbar-end">
-          <ConnectWalletButton />
-        </div>
-      </div>
+     <Navbar />
       <div className='h-full w-full fixed top-0 z-0 flex bg-white text-black'>
 
         <div className='flex flex-col justify-center items-center gap-9'>
@@ -92,17 +54,20 @@ function Main() {
 
 
       </div>
-      <div className='bg-black h-300vh w-full relative z-10 top-full rounded-t-[70px] p-12 flex flex-col'>
+      <div className='bg-black h-300vh w-full relative  z-10 top-full rounded-t-[70px] p-12 flex flex-col'>
         <StepsCard number='1' title='Easy Login' description='"Seamless login: quick, secure access."' image='/Metamask.png' heading="Easily connect with wallet" desc="Streamline wallet connection: Effortlessly link your wallet to access funds securely and conveniently, enabling seamless transactions with just a few clicks for hassle-free financial management and transactions on our platform." button="Learn More about Metamask" css="flex-row" bcolor="white" />
         <StepsCard number='2' title='Instant Kyc' description='"Instant KYC: Fast, secure verification for seamless onboarding."' image='https://appinventiv.com/wp-content/uploads/2021/03/KYC-with-blockchain-02.jpg' heading="Verify yourself through Adhar" desc="Easily verify your identity through Aadhar for seamless onboarding. Our platform offers instant Aadhar-based KYC verification, ensuring quick and secure authentication. Experience hassle-free verification and gain access to our services swiftly." button="Do your kyc Now!" css="flex-row-reverse" bcolor="white" />
 
 
 
       </div>
-      <div className='bg-white h-300vh w-full relative z-13 top-full rounded-t-[70px] p-12 flex flex-col text-blue-400'>
-        <StepsCard number='3' title='Instant Loans' description='"Instant Loans: Quick, easy access to funds."' image='https://www.moneycontrol.com/static-mcnews/2021/06/Loan-770x433.jpg' heading="Get Instant Loans" desc="Access instant loans quickly and easily on our platform. Our streamlined process ensures hassle-free loan disbursal, enabling you to secure funds instantly for your financial needs. Experience quick and convenient borrowing with FlexiLoans." button="Learn More about Loans" css="flex-row" bcolor="black" />
-        <StepsCard number='4' title='Flexible Repayment' description='"Flexible Repayment: Tailored repayment options."' image='https://www.moneycontrol.com/static-mcnews/2021/06/Loan-770x433.jpg' heading="Repay your loans flexibly" desc="Enjoy flexible repayment options tailored to your needs. Our platform offers customizable repayment plans, enabling you to repay your loans conveniently. Experience hassle-free repayment and manage your finances effectively with FlexiLoans." button="Learn More about Repayment" css="flex-row-reverse" bcolor="black" />
+      <div className='bg-white h-300vh w-full relative z-15 top-full rounded-t-[70px] p-12 flex flex-col text-blue-400'>
+        <StepsCard number='3' title='Submit Collateral with Ease' description='"Effortlessly submit collateral and assess its value with our simplified process"' image='https://media.licdn.com/dms/image/D5612AQFnLOugxKb5ig/article-cover_image-shrink_720_1280/0/1690354958352?e=2147483647&v=beta&t=b_UEz3wwdaCmuV0PZ309E5LHsob1p87m0Kp71QkBfuc' heading="Streamlined Collateral Submission & Evaluation" desc="Effortlessly submit collateral and assess its value with our simplified process. Our platform streamlines collateral submission and offers transparent evaluation, ensuring a smooth borrowing experience." button="Submit Collateral Now!" css="flex-row" bcolor="black" />
+        <StepsCard number='4' title='Flexible Repayment' description='"Flexible Repayment: Tailored repayment options."' image='https://c8.alamy.com/comp/2ABNH9H/quick-and-easy-loan-fast-money-providence-icon-vector-illustration-easy-instant-credit-loan-payment-fast-money-icon-finance-color-symbol-for-web-a-2ABNH9H.jpg' heading="Repay your loans flexibly" desc="Enjoy flexible repayment options tailored to your needs. Our platform offers customizable repayment plans, enabling you to repay your loans conveniently. Experience hassle-free repayment and manage your finances effectively with FlexiLoans." button="Learn More about Repayment" css="flex-row-reverse" bcolor="black" />
        </div> 
+       <div className='w-full relative z-20 top-full '>
+        <Footer />
+       </div>
     </div>
   );
 }
