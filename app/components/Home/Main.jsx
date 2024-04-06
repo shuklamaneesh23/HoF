@@ -2,6 +2,7 @@ import React from 'react';
 import StepsCard from './StepsCard';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import PaymentDetails from './payment';
 
 
 function Main() {
@@ -10,11 +11,11 @@ function Main() {
      <Navbar />
       <div className='h-full w-full fixed top-0 z-0 flex bg-white text-black'>
 
-        <div className='flex flex-col justify-center items-center gap-9'>
-          <div className='flex flex-col justify-center items-center ml-[5vw]'>
+        <div className='flex flex-col justify-center items-center gap-9 ml-[9vw]'>
+          <div className='flex flex-col justify-center items-center ml-[6vw]'>
 
             <div>
-              <span className='text-[5vw]'>FlexiLoans: Redefining Borrowing with  </span>
+              <span className='text-[5vw]'>Redefining Borrowing with  </span>
             </div>
             <div>
               <h1 className='text-[4vw]'>Blockchain Speed and Security</h1>
@@ -54,7 +55,7 @@ function Main() {
 
 
       </div>
-      <div className='bg-black h-300vh w-full relative  z-10 top-full rounded-t-[70px] p-12 flex flex-col'>
+      <div id="black" className='bg-black h-300vh w-full relative  z-10 top-full rounded-t-[70px] p-12 flex flex-col'>
         <StepsCard number='1' title='Easy Login' description='"Seamless login: quick, secure access."' image='/Metamask.png' heading="Easily connect with wallet" desc="Streamline wallet connection: Effortlessly link your wallet to access funds securely and conveniently, enabling seamless transactions with just a few clicks for hassle-free financial management and transactions on our platform." button="Learn More about Metamask" css="flex-row" bcolor="white" />
         <StepsCard number='2' title='Instant Kyc' description='"Instant KYC: Fast, secure verification for seamless onboarding."' image='https://appinventiv.com/wp-content/uploads/2021/03/KYC-with-blockchain-02.jpg' heading="Verify yourself through Adhar" desc="Easily verify your identity through Aadhar for seamless onboarding. Our platform offers instant Aadhar-based KYC verification, ensuring quick and secure authentication. Experience hassle-free verification and gain access to our services swiftly." button="Do your kyc Now!" css="flex-row-reverse" bcolor="white" />
 
@@ -68,6 +69,7 @@ function Main() {
        <div className='w-full relative z-20 top-full '>
         <Footer />
        </div>
+       
     </div>
   );
 }

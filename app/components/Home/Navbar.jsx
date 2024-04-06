@@ -15,28 +15,30 @@ export default function Navbar(){
               <li>
                 <a>Learn</a>
                 <ul className="p-2">
-                  <li><a>How to use?</a></li>
-                  <li><a>Features</a></li>
+                 <Link href="/#black"><li>How to use?</li></Link> 
+                  <Link href=""><li>Features</li></Link>
                 </ul>
               </li>
-              <li><a>Lend</a></li>
+              <Link href="/lend">
+              <li>Lend</li>
+              </Link>
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl">FlexiLoans</a>
+          <Link className="btn btn-ghost text-2xl" href="/">FlexiLoans</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li><a href="/borrow">Borrow</a></li>
+            <li><Link href="/borrow">Borrow</Link></li>
             <li>
               <details>
                 <summary>Learn</summary>
                 <ul className="p-2">
-                  <li><a>How to use?</a></li>
-                  <li><a>More features</a></li>
+                  <li><Link href="/#black">How to use?</Link></li>
+                  <li><Link href="">More features</Link ></li>
                 </ul>
               </details>
             </li>
-            <li><a>Lend</a></li>
+            <li><Link href="/lend">Lend</Link></li>
           </ul>
         </div>
         <div className="navbar-end">

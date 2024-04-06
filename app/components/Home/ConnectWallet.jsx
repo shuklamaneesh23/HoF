@@ -1,11 +1,15 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
+import UserContext from "../../context/UserContext";
 
 
 const ConnectWalletButton = () => {
   const [connectedWallet, setConnectedWallet] = useState(null);
   const [balance, setBalance] = useState(null);
+  const { setAccount } = React.useContext(UserContext);
+  const { setAmount } = React.useContext(UserContext);
 
   const connectWallet = async () => {
     try {
@@ -15,13 +19,17 @@ const ConnectWalletButton = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const address = await signer.getAddress();
+        setAccount(address);
+
+        const balance = await provider.getBalance(address);
         
-        const balance = await provider.getBalance(address); // Get account balance
+        // Get account balance
         const formattedBalance = ethers.utils.formatEther(balance); // Convert balance from Wei to Ether
         const shortenedAddress = address.slice(0, 5) + "..." + address.slice(-5); // Shorten address for display
         console.log(shortenedAddress);
         setConnectedWallet(shortenedAddress);
         setBalance(formattedBalance);
+        setAmount(formattedBalance);
       } else {
         alert("Please install MetaMask to use this dApp.");
       }

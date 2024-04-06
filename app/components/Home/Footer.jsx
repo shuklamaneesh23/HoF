@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Footer() {
     return (
@@ -6,8 +7,8 @@ function Footer() {
             <nav>
                 <h6 className="footer-title">Services</h6>
                 <a className="link link-hover">Instant KYC</a>
-                <a className="link link-hover">Collateral Verification</a>
-                <a className="link link-hover">Repayment</a>
+                <Link className="link link-hover" href="/collateralUpload">Collateral Verification</Link>
+                <Link className="link link-hover" href="/repayment">Repayment</Link>
                 <a className="link link-hover">Learn More</a>
             </nav>
             <nav>
