@@ -1,6 +1,6 @@
 import Footer from "../components/Home/Footer"
 import Navbar from "../components/Home/Navbar"
-import Message from "../components/Notifications/Message"
+import Message from "../components/Notifications/message"
 
 export default function Unread() {
     return (
