@@ -1,6 +1,6 @@
 # FlexiLoans
 
-FlexiLoans is an innovative lending platform that leverages blockchain technology and the concept of flash loans to revolutionize the borrowing experience. Through FlexiLoans, users can access loans quickly and conveniently, without the need for lengthy approval processes or extensive collateral requirements.
+FlexiLoans is an innovative lending platform that leverages blockchain technology and the concept of flash loans to revolutionize the borrowing experience. Through FlexiLoans, users can access loans quickly and conveniently, without the need for lengthy approval processes.
 
 ## Features
 
