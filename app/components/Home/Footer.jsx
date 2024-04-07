@@ -14,8 +14,8 @@ function Footer() {
             <nav>
                 <h6 className="footer-title">Quick links</h6>
                 <a className="link link-hover">Connect Wallet</a>
-                <a className="link link-hover">Lend</a>
-                <a className="link link-hover">Borrow</a>
+                <Link className="link link-hover" href="/lend">Lend</Link>
+                <Link className="link link-hover" href="/borrow">Borrow</Link>
                 <a className="link link-hover">About us</a>
             </nav>
             <nav>

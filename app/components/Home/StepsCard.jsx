@@ -1,5 +1,5 @@
 import KnowMoreButton from "./KnowMoreButton";
-export default function StepsCard({number, title, description,heading,desc,button, image,css,bcolor}) {
+export default function StepsCard({number, title, description,heading,desc,button,route, image,css,bcolor}) {
     return (
         <div className='flex flex-col justify-center items-center'>
           <div className={`flex  text-xl rounded-full border justify-center items-center h-[50px] w-[50px] border-${bcolor} mt-20`}> <span className='text-2xl text-blue-400'>{number}</span> </div>
@@ -18,7 +18,7 @@ export default function StepsCard({number, title, description,heading,desc,butto
                 <h1 className='text-[1vw] text-wrap font-medium'>{desc}</h1>
                 </div>
                 <div>
-                  <KnowMoreButton props={button}/>
+                  <KnowMoreButton title={button} route={route}/>
                 </div>
             </div>
             <div className='w-1/2 flex justify-center items-center'>

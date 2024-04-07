@@ -1,7 +1,9 @@
-export default function KnowMoreButton({props}) {
+import Link from "next/link";
+
+export default function KnowMoreButton({title,route}) {
     return (
-        <a
-  href="#_"
+        <Link
+  href={route}
   className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
 >
   <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full" />
@@ -38,8 +40,8 @@ export default function KnowMoreButton({props}) {
     </svg>
   </span>
   <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-    {props}
+    {title}
   </span>
-</a>
+</Link>
 
     )};
