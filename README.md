@@ -5,7 +5,6 @@ FlexiLoans is an innovative lending platform that leverages blockchain technolog
 ## Features
 
 - **Quick Access to Loans**: Borrowers can access loans quickly without going through lengthy approval processes.
-- **No Extensive Collateral Requirements**: FlexiLoans does not require extensive collateral, making borrowing more accessible.
 - **Aadhar-based KYC Verification**: The platform utilizes Aadhar details for KYC verification, ensuring the security and legitimacy of users.
 - **Flexible Terms and Conditions**: Borrowers can choose from a pool of lenders offering flexible terms and conditions, including customizable interest rates and repayment schedules.
 - **Blockchain-based Smart Contract System**: Ensures transparency, accountability, and security throughout the lending process.
